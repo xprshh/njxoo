@@ -12,8 +12,10 @@ in {
     ./locale.nix
     ./nautilus.nix
     ./laptop.nix
+    ./nixovo.nix
     ./hyprland.nix
     ./gnome.nix
+    ./time.nix
   ];
 
   hyprland.enable = true;
