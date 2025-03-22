@@ -116,13 +116,15 @@ in {
       in
         [
           "CTRL SHIFT, R,  ${e} quit; ags -b hypr"
-          "SUPER, R,       ${e} -t launcher"
+          "SUPER, R,       ${e} -t launcher" 
+          "ALT, R,       ${e} -t launcher" 
           "SUPER, Tab,     ${e} -t overview"
           ",XF86PowerOff,  ${e} -r 'powermenu.shutdown()'"
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
           ",Print,         ${e} -r 'recorder.screenshot()'"
           "SHIFT,Print,    ${e} -r 'recorder.screenshot(true)'"
-          "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
+          "SUPER, Return, exec, wezterm" # xterm is a symlink, not actually xterm is blackbox
+          "ALT, Return, exec, wezterm" 
           "SUPER, W, exec, firefox"
           "SUPER, E, exec, wezterm -e lf"
 
