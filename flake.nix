@@ -71,6 +71,12 @@
       flake = false;
     };
 
+    niri.url = "github:sodiboo/niri-flake";
+    niri-source = {
+      url = "github:YaLTeR/niri";
+      flake = false;
+    };
+
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
       flake = false;
