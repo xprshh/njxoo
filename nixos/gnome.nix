@@ -53,6 +53,8 @@
       desktopManager.gnome.enable = true;
     };
 
+   programs.niri.enable = true;
+
     programs.dconf.profiles.gdm.databases = [
       {
         settings = {
