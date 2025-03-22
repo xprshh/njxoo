@@ -61,6 +61,7 @@ in {
         ../home-manager/wezterm.nix
         ../home-manager/helix.nix
         ../home-manager/mimelist.nix
+        ../home-manager/niri.nix
         ./home.nix
       ];
     };
