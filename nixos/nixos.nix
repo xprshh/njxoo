@@ -16,6 +16,7 @@ in {
     ./hyprland.nix
     ./gnome.nix
     ./time.nix
+    ./lanzaboote.nix
   ];
 
   hyprland.enable = true;
