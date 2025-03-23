@@ -368,7 +368,7 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1691186842,
+        "lastfirefox-beta-binModified": 1691186842,
         "narHash": "sha256-wxBVCvZUwq+XS4N4t9NqsHV4E64cPVqQ2fdDISpjcw0=",
         "owner": "nixos",
         "repo": "nixpkgs",
