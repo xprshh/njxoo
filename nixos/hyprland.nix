@@ -54,6 +54,7 @@
       gnome-weather
       gnome-calculator
       gnome-clocks
+      blueberry
       gnome-software # for flatpak
       wl-gammactl
       wl-clipboard
