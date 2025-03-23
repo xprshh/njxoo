@@ -15,7 +15,7 @@ in {
     ./nixovo.nix
     ./hyprland.nix
     ./gnome.nix
-    ./time.nix
+    ./gaming.nix
   ];
 
   hyprland.enable = true;
