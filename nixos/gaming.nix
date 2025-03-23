@@ -7,7 +7,7 @@
 
   # Enabling Gamescope, a tool for optimizing gaming
   programs.gamescope.enable = true;
-
+ environment.sessionVariables.NIXOS_OZONE_WL = "1";
   # Configuring the X server for video drivers and modesetting
   services.xserver.videoDrivers = ["modesetting"];
 
