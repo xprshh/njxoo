@@ -5,9 +5,6 @@
     osu-lazer-bin
   ];
 
-  hardware.graphics.extraPackages = with pkgs; [ vaapiIntel intel-media-driver ];
-
-
   # Enabling Gamescope, a tool for optimizing gaming
   programs.gamescope.enable = true;
 
