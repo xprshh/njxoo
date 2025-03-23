@@ -1,16 +1,12 @@
 { config, pkgs, ... }:
 
 {
-  # Installing the osu-lazer game
   environment.systemPackages = with pkgs; [
     osu-lazer-bin
   ];
 
-  # Enable hardware graphics acceleration
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;  # This enables 32-bit graphics support for compatibility
-  };
+  hardware.graphics.extraPackages = with pkgs; [ vaapiIntel intel-media-driver ];
+
 
   # Enabling Gamescope, a tool for optimizing gaming
   programs.gamescope.enable = true;
