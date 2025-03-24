@@ -40,6 +40,7 @@
 
     environment.systemPackages = with pkgs;
     with gnome; [
+      obsidian
       morewaita-icon-theme
       adwaita-icon-theme
       qogir-icon-theme
