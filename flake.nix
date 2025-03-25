@@ -71,6 +71,21 @@
       flake = false;
     };
 
+      morewaita = {
+      url = "github:somepaulo/MoreWaita";
+      flake = false;
+    };
+    
+      icon-browser = {
+      url = "github:aylur/icon-browser";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    battery-notifier = {
+      url = "github:aylur/battery-notifier";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
       flake = false;
