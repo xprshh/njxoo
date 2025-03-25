@@ -91,6 +91,26 @@
         "type": "github"
       }
     },
+    "battery-notifier": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742237136,
+        "narHash": "sha256-LuzHqoTBNApxd3XTIKBmBVoTA/tkNvF0AATqHZM+OVg=",
+        "owner": "aylur",
+        "repo": "battery-notifier",
+        "rev": "043ccbf959a339bedfa10253eebe229d45d68499",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aylur",
+        "repo": "battery-notifier",
+        "type": "github"
+      }
+    },
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
@@ -152,11 +172,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1742937932,
-        "narHash": "sha256-OrLDssbhEZvbHMljgT2mFNWacghm2HJBDTWlqTJNhO8=",
+        "lastModified": 1742944004,
+        "narHash": "sha256-l9xKPl0kGHzMdh8FO0AXbPjc67gqzgPpF1WpRUQ7qGE=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "f565da89e759ebf57b236510aa955b8a2d41c779",
+        "rev": "b9da58d50551ebd74226fb8487b248a5a36c988f",
         "type": "github"
       },
       "original": {
@@ -477,6 +497,26 @@
         "type": "github"
       }
     },
+    "icon-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742261382,
+        "narHash": "sha256-ikMTpwtF+CgNJLp1LaF0Nrm4MEfwbqbJXgtjdJ0zupI=",
+        "owner": "aylur",
+        "repo": "icon-browser",
+        "rev": "036b062d2d79ad814e16bd6521ae4a6e16594440",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aylur",
+        "repo": "icon-browser",
+        "type": "github"
+      }
+    },
     "lf-icons": {
       "flake": false,
       "locked": {
@@ -509,6 +549,22 @@
         "owner": "InioX",
         "ref": "v2.2.0",
         "repo": "matugen",
+        "type": "github"
+      }
+    },
+    "morewaita": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742937862,
+        "narHash": "sha256-fSzKnbkrQlzPAS9AWZ03qb/k0/9WiVwO5pw/CzOyRhQ=",
+        "owner": "somepaulo",
+        "repo": "MoreWaita",
+        "rev": "8a004cec56eb318a8cdd08fa96eb5a3528ced90c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "somepaulo",
+        "repo": "MoreWaita",
         "type": "github"
       }
     },
@@ -619,13 +675,16 @@
       "inputs": {
         "ags": "ags",
         "astal": "astal_2",
+        "battery-notifier": "battery-notifier",
         "firefox-gnome-theme": "firefox-gnome-theme",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-hyprspace": "hyprland-hyprspace",
         "hyprland-plugins": "hyprland-plugins",
+        "icon-browser": "icon-browser",
         "lf-icons": "lf-icons",
         "matugen": "matugen",
+        "morewaita": "morewaita",
         "nixpkgs": "nixpkgs_5"
       }
     },
