@@ -1,0 +1,25 @@
+name: Nix Flake Checker
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Nix Flake Checker
+        uses: DeterminateSystems/flake-checker-action@v9
+        with:
+          flake-lock-path: flake.lock  # Set path explicitly if needed
+          check-outdated: true
+          check-owner: true
+          check-supported: true
+          ignore-missing-flake-lock: true
+          nixpkgs-keys: nixpkgs
+          fail-mode: true
+          send-statistics: true
