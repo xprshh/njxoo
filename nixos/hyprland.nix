@@ -38,10 +38,10 @@
       pam.services.ags = {};
     };
 
-    environment.systemPackages = with pkgs;
-    with gnome; [
-      obsidian
+   environment.systemPackages = with pkgs; [
       morewaita-icon-theme
+      obsidian
+      blueberry
       adwaita-icon-theme
       qogir-icon-theme
       loupe
@@ -55,14 +55,9 @@
       gnome-weather
       gnome-calculator
       gnome-clocks
-      blueberry
       gnome-software # for flatpak
-      wl-gammactl
       wl-clipboard
-      wayshot
-      pavucontrol
-      brightnessctl
-      swww
+      wl-gammactl
     ];
 
     systemd = {
@@ -93,10 +88,11 @@
         glib-networking.enable = true;
         gnome-keyring.enable = true;
         gnome-online-accounts.enable = true;
-        tracker-miners.enable = true;
-        tracker.enable = true;
+        localsearch.enable = true;
+        tinysparql.enable = true;
       };
     };
+
 
     services.greetd = {
       enable = true;
