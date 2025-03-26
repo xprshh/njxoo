@@ -41,7 +41,6 @@ in {
       font.package
       cursorTheme.package
       iconTheme.package
-      adwaita-icon-theme
       papirus-icon-theme
     ];
     sessionVariables = {
