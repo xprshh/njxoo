@@ -37,12 +37,6 @@
     "vm.dirty_writeback_centisecs" = 3000;
   };
 
-  # Enable X11 server (if using Xorg)
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "intel" ];  # Remove if using Wayland
-
-  # Enable TLP for better battery life
-  services.tlp.enable = true;
 
   # Install power-saving utilities
   environment.systemPackages = with pkgs; [
