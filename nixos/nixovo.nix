@@ -25,7 +25,7 @@
 
   # Install power-saving utilities
   environment.systemPackages = with pkgs; [
-    powertop`
+    powertop
     acpi
     pciutils
     ethtool
