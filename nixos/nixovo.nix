@@ -41,8 +41,6 @@
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "intel" ];  # Remove if using Wayland
 
-  # Enable TLP for better battery life
-  services.tlp.enable = true;
 
   # Install power-saving utilities
   environment.systemPackages = with pkgs; [
