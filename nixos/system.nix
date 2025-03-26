@@ -7,8 +7,6 @@
     auto-optimise-store = true;
   };
 
- nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
-
   # virtualisation
   programs.virt-manager.enable = true;
   virtualisation = {
