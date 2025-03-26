@@ -2,36 +2,21 @@
 with lib.hm.gvariant; {
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
-      sources = [(mkTuple ["xkb" "hu"])];
-      xkb-options = ["terminate:ctrl_alt_bksp"];
+      sources = [(mkTuple ["xkb" "us"]);
     };
 
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
+      font-name = "Ubuntu Nerd Font 11";
+      monospace-font-name = "CaskaydiaCove Nerd Font 10";
+      cursor-theme = "Qogir";
+      icon-theme = "MoreWaita";
+      gtk-theme = "adw-gtk3";
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
-    };
-
-    "org/gnome/desktop/search-providers" = {
-      disabled = ["org.gnome.Boxes.desktop"];
-      enabled = ["org.gnome.Weather.desktop"];
-      sort-order = [
-        "org.gnome.Contacts.desktop"
-        "org.gnome.Documents.desktop"
-        "org.gnome.Nautilus.desktop"
-        "org.gnome.Calendar.desktop"
-        "org.gnome.Calculator.desktop"
-        "org.gnome.Software.desktop"
-        "org.gnome.Settings.desktop"
-        "org.gnome.clocks.desktop"
-        "org.gnome.design.IconLibrary.desktop"
-        "org.gnome.seahorse.Application.desktop"
-        "org.gnome.Weather.desktop"
-        "org.gnome.Boxes.desktop"
-      ];
     };
 
     "org/gnome/desktop/session" = {
@@ -91,7 +76,7 @@ with lib.hm.gvariant; {
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
-      command = "xterm";
+      command = "gnome-terminal";
       name = "term";
     };
 
@@ -100,22 +85,6 @@ with lib.hm.gvariant; {
       power-button-action = "interactive";
       sleep-inactive-ac-type = "nothing";
       sleep-inactive-battery-type = "nothing";
-    };
-
-    "org/gnome/shell" = {
-      favorite-apps = [
-        "firefox.desktop"
-        "org.wezfurlong.wezterm.desktop"
-        "org.gnome.Nautilus.desktop"
-        "org.gnome.Calendar.desktop"
-        "obsidian.desktop"
-        "caprine.desktop"
-        "teams-for-linux.desktop"
-        "discord.desktop"
-        "spotify.desktop"
-        "com.usebottles.bottles.desktop"
-        "org.gnome.Software.desktop"
-      ];
     };
 
     "org/gnome/shell/app-switcher" = {
