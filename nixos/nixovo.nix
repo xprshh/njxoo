@@ -12,17 +12,6 @@
     HibernateState=disk
   '';
 
-  # Kernel optimizations
-  boot.kernel.sysctl = {
-    "vm.laptop_mode" = 10;
-    "vm.dirty_writeback_centisecs" = 3000;
-  };
-
-  # Enable X11 server (if using Xorg)
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "intel" ];  # Remove if using Wayland
-
-
   # Install power-saving utilities
   environment.systemPackages = with pkgs; [
     powertop
