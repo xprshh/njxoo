@@ -14,12 +14,7 @@
       enableUserService = true;
     };
 
-    # nvidia
-    hardware.graphics = {
-      enable = true;
-      enable32Bit = true;
-    };
-
+  
     # openrgb
     services.hardware.openrgb.enable = true;
 
